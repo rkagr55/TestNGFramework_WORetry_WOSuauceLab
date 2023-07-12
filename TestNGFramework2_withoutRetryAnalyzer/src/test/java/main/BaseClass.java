@@ -41,7 +41,7 @@ public class BaseClass {
 		getDriver().manage().deleteAllCookies();
 		getDriver().manage().window().maximize();
 		getDriver().manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		wait = new WebDriverWait(getDriver(), 120); // 2 mins
+		wait = new WebDriverWait(getDriver(), 120); //2 mins
 		return getDriver();
 	}
 
