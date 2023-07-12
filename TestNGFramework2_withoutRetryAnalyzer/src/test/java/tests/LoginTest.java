@@ -13,7 +13,7 @@ public class LoginTest extends BaseClass {
 
 	
 	@Test(description="validLogin")
-	public void TCID1() throws InterruptedException {
+	public void TCID1() {
 		
 		String methodName = new Object() {}.getClass().getEnclosingMethod().getName(); 
 		LoginPage objPage1 = new LoginPage(getDriver());
