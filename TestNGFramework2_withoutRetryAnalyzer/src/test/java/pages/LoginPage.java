@@ -22,7 +22,7 @@ public class LoginPage extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 
-	public String launchBrowser() throws InterruptedException {
+	public String launchBrowser() {
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 		return driver.getTitle();
 	}
