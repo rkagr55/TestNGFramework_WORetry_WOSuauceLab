@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import main.BaseClass;
 
 public class MyAccountPage extends BaseClass {
@@ -19,8 +20,7 @@ public class MyAccountPage extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 
-	public int getMyAccountSectionCount() throws InterruptedException {
-		Thread.sleep(10000);
+	public int getMyAccountSectionCount()  {
 		System.out.println(MyAccountSectionList.size());
 		return MyAccountSectionList.size();
 	}

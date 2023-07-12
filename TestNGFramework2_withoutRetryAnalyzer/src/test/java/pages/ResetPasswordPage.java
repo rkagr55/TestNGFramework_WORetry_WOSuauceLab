@@ -18,11 +18,9 @@ public class ResetPasswordPage {
 	}
 
 	@Test
-	public String resetPassword(String EmailID) throws InterruptedException {
-		Thread.sleep(10000);
+	public String resetPassword(String EmailID) {
 		resetPasswordPageEmailID.sendKeys(EmailID);
 		resetPasswordPageSubmitButton.click();
-		Thread.sleep(10000);
 		return driver.getTitle();
 
 	}
