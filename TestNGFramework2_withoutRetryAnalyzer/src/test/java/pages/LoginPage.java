@@ -31,19 +31,19 @@ public class LoginPage extends BaseClass {
 		return driver.findElement(By.linkText("Forgotten Password")).isDisplayed();
 	}
 
-	public String Login(String un, String pw) throws InterruptedException {
+	public String Login(String un, String pw)  {
 		loginPageEmailID.sendKeys(un);
 		loginPagePassword.sendKeys(pw);
 		loginPageSubmitButton.click();
 		return driver.getTitle();
 	}
 
-	public String navigateToResetPasswordPage() throws InterruptedException {
+	public String navigateToResetPasswordPage()  {
 		forgetPasswordLink.click();
 		return driver.getTitle();
 	}
 
-	public String getSuccessMessageResetPassword() throws InterruptedException {
+	public String getSuccessMessageResetPassword()  {
 		String message = resetPasswordSuccessMessage.getText();
 		System.out.println(message);
 		return message;
